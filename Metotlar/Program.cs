@@ -11,6 +11,7 @@ namespace Metotlar
             urun1.Fiyati = 12;
             urun1.StokAdedi = 2;
 
+
             Urun urun2 = new Urun();
             urun2.Adi = "armut";
             urun2.Fiyati = 8;
