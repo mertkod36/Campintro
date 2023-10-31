@@ -1,0 +1,14 @@
+﻿Build started...
+1>------ Build started: Project: ClassMetotDemo, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\MusteriManager.cs(15,39,15,48): error CS1061: 'Musteri' does not contain a definition for 'Firstname' and no accessible extension method 'Firstname' accepting a first argument of type 'Musteri' could be found (are you missing a using directive or an assembly reference?)
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\MusteriManager.cs(15,59,15,67): error CS1061: 'Musteri' does not contain a definition for 'LastName' and no accessible extension method 'LastName' accepting a first argument of type 'Musteri' could be found (are you missing a using directive or an assembly reference?)
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\MusteriManager.cs(20,39,20,48): error CS1061: 'Musteri' does not contain a definition for 'Firstname' and no accessible extension method 'Firstname' accepting a first argument of type 'Musteri' could be found (are you missing a using directive or an assembly reference?)
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\Program.cs(21,23,21,30): error CS0103: The name 'musteri' does not exist in the current context
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\Program.cs(22,23,22,30): error CS0103: The name 'musteri' does not exist in the current context
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\Program.cs(22,43,22,50): error CS0103: The name 'musteri' does not exist in the current context
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\Program.cs(27,1,27,15): error CS0103: The name 'musteriManager' does not exist in the current context
+1>C:\Users\downlos\source\repos\Campintro\ClassMetotDemo\Program.cs(28,1,28,15): error CS0103: The name 'musteriManager' does not exist in the current context
+1>Done building project "ClassMetotDemo.csproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+========== Build started at 22:53 and took 02,161 seconds ==========
