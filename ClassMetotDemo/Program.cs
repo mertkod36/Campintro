@@ -18,15 +18,31 @@ Musteri[] musteriler = new Musteri[] { musteri1, musteri2 };
 
 foreach (var Musteri in musteriler)
 {
-    Console.WriteLine(musteri.Id + " ");
-    Console.WriteLine(musteri.Firstname + musteri.Lastname);
+    Console.WriteLine(Musteri.Id + " ");
+    Console.WriteLine(Musteri.Firstname + Musteri.Lastname);
     
 }
+
+MusteriManager musteriManager = new MusteriManager();
 
 Console.WriteLine("Müşteri Ekle");
 musteriManager.Add(musteri1);
 musteriManager.Add(musteri2);
 Console.WriteLine();
+
+
+Console.WriteLine("Müşteri Listele");
+musteriManager.List(musteri1);
+musteriManager.List(musteri2);
+Console.WriteLine();
+
+
+Console.WriteLine("Müşteri sil");
+musteriManager.Delete(musteri1);
+musteriManager.Delete(musteri2);
+Console.WriteLine();
+
+Console.ReadKey();
 
 
 
