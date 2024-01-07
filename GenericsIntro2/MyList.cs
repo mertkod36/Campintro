@@ -15,10 +15,10 @@ namespace GenericsIntro2
                 items = new T[0];
         }
 
-        internal void Add(T item)
+        public void Add(T item)
             
         {
-            T[] tempArry = items;
+            T[] tempArry = items;//ürünleri tutar.
 
             items = new T[items.Length+1];
 
