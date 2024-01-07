@@ -21,3 +21,12 @@ musteri2.Id = 2;
 musteri2.MusteriNo = "4321";
 musteri2.SirketAdi = "mert.com";
 musteri2.VergiNo = "985432210";
+
+
+Musteri musteri3= new TuzelMusteri();
+Musteri musteri4 = new GercekMusteri();
+
+MusteriManeger musteriManeger = new MusteriManeger();
+musteriManeger.Ekle(musteri1);
+musteriManeger.Ekle(musteri2);
+
