@@ -9,12 +9,15 @@ namespace OOP4
 {
     internal class BasvuruManager
     {                          //bütün kredilerin referanlarını tutuyor(IKrediManager)
-        public void BasvuruYap(IKrediManager krediManager)
+        //methot enjection
+        public void BasvuruYap(IKrediManager krediManager, ILoggerService loggerService)
         {
 
             //Basvuran bilgilerini değerlendirme
 
             krediManager.Hesapla();
+            loggerService.Log();
+
         }
 
         public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
