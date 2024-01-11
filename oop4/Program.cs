@@ -35,7 +35,11 @@ BasvuruManager basvuruManager= new BasvuruManager();
 //basvuruManager.BasvuruYap(tasitKrediManager);
 //basvuruManager.BasvuruYap(tasitKrediManager,new DataBaseLoggerService());
 //basvuruManager.BasvuruYap(tasitKrediManager,databaseLoggerService);
-basvuruManager.BasvuruYap(new EsnafKredisiManager(),new SmsLoggerService());
+
+//basvuruManager.BasvuruYap(new EsnafKredisiManager(),new List<ILoggerService> { new DataBaseLoggerService(),new SmsLoggerService() } );
+
+List<ILoggerService> loggers = new List<ILoggerService> { new SmsLoggerService(), new FileBaseLoggerService()};
+basvuruManager.BasvuruYap(new EsnafKredisiManager(),loggers);
 
 
 List<IKrediManager> krediler = new List<IKrediManager>() {ıhtiyacKrediManager,tasitKrediManager };//burada banka çalışanı birden fazla kredinin hesaplanması için sisteme kredileri giriyor........bu kod sayesinde birden fazla kredi aynı anda hesaplanabiliyor.
